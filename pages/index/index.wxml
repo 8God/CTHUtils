@@ -1,0 +1,23 @@
+<swiper autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}" circular="{{circular}}" indicatorDots="{{indicatorDots}}" class="header_swiper">
+  <block wx:for="{{imgUrls}}" wx:for-item="imgUrl">
+    <swiper-item class='header_swiper_item'>
+      <navigator url='{{imgUrl.link}}' hover-class='header_navigator'>
+        <image src='{{imgUrl.url}}' style='width:100%' width="355" height="300" mode='aspectFill'></image>
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view scroll-y class='main_scrollview'>
+  <block wx:for='{{menuItem}}'>
+    <view class='horizontal_layout'>
+      <block wx:for='{{item}}' wx:for-item='child'>
+        <navigator class='bg_menu_item' style='width:{{menuItemWidth}}px;' >
+          <image src='{{child.iconPath}}' mode='scaleToFill' style='width:60rpx;height:60rpx;' />
+          <text>{{child.title}}</text>
+        </navigator>
+      </block>
+    </view>
+  </block>
+
+
+</scroll-view>

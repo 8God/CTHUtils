@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/image_preview/image_preview",
+    "pages/about/about",
+    "pages/wechat_category_list/wechat_category_list",
+    "pages/wechat_article_list/wechat_article_list",
+    "pages/wechat_article_detail/wechat_article_detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#5E7CE2",
+    "navigationBarTitleText": "实用工具助手",
+    "navigationBarTextStyle":"#ffffff"
+  },
+  "tabBar": {
+    "backgroundColor": "#5E7CE2",
+    "selectedColor": "#ffffff",
+    "color": "#aaaaaa",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/resources/icons/home.png",
+      "selectedIconPath": "/resources/icons/home_selected.png"
+    },{
+      "pagePath": "pages/about/about",
+      "text": "关于",
+      "iconPath": "/resources/icons/about.png",
+      "selectedIconPath": "/resources/icons/about_selected.png"
+    }]
+  }
+}

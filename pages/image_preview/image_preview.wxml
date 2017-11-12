@@ -1,0 +1,3 @@
+<view class='fullscreen_view' >
+  <image src='{{imgUrl}}' class='fullscreen_image' width='350rpx' height='180rpx' mode='aspectFill' />
+</view>
