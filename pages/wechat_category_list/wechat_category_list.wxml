@@ -1,2 +1,14 @@
 <!--pages/wechat_category_list/wechat_category_list.wxml-->
-<text>pages/wechat_category_list/wechat_category_list.wxml</text>
+<scroll-view scroll-y class='category_list'>
+  <block wx:for='{{categoryList}}' wx:for-item='category'>
+    <template is="item_category_list" data="{{...category}}" />
+  </block>
+</scroll-view>
+
+<template name='item_category_list'>
+ 
+    <navigator class='category_item' url='/pages/wechat_article_list/wechat_article_list?cid={{cid}}'>
+      <text class='category_item_text'>{{name}}</text>
+    </navigator>
+ 
+</template>

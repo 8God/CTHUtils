@@ -17,7 +17,7 @@ Page({
       [{
         iconPath: '/resources/icons/ic_wechat.png',
         title: '微信精选1',
-        path: ''
+        path: '/pages/wechat_category_list/wechat_category_list'
       }, {
         iconPath: '/resources/icons/ic_wechat.png',
         title: '微信精选2',
