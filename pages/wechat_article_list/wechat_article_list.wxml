@@ -1,2 +1,13 @@
-<!--pages/wechat_article_list/wechat_article_list.wxml-->
-<text>pages/wechat_article_list/wechat_article_list.wxml</text>
+<scroll-view scroll-y class='category_list' enable-back-to-top='true' bindscrolltolower='onLoadMore'>
+  <block wx:for='{{articleList}}' wx:for-item='article'>
+    <template is="item_article_list" data="{{...article}}" />
+  </block>
+</scroll-view>
+
+<template name='item_article_list'>
+ 
+    <navigator class='category_item' url='/pages/wechat_article_detail/wechat_article_list?artical_id={{artical_id}}'>
+      <text class='category_item_text'>{{title}}</text>
+    </navigator>
+ 
+</template>

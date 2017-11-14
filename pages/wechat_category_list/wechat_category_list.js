@@ -16,6 +16,9 @@ Page({
    */
   onLoad: function (options) {
     var it = this;
+    wx:wx.showLoading({
+      title: '请求数据中',
+    })
     wx: wx.request({
       url: app.globalData.mobAPI + this.data.categoryListPath,
       data: {
@@ -30,11 +33,13 @@ Page({
             it.setData({
               categoryList: result
             });
-            console.log("categoryList = " + it.data.categoryList.length);
           }
         }
+        wx:wx.hideLoading();
       },
-      fail: function (res) { },
+      fail: function (res) {
+        wx:wx.hideLoading();
+       },
       complete: function (res) { },
     })
   },
