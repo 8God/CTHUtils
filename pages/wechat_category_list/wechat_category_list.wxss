@@ -9,7 +9,8 @@ page {
 
 .category_item_text {
   color: #E7475E;
-  font-size: 14px;
+  font-size: 18px;
+
 }
 
 .category_item {

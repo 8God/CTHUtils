@@ -1,2 +1,3 @@
-<!--pages/wechat_article_detail/wechat_article_detail.wxml-->
-<text>pages/wechat_article_detail/wechat_article_detail.wxml</text>
+<web-view src='{{url}}'>
+
+</web-view>

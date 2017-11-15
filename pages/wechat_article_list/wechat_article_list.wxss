@@ -1,28 +1,11 @@
+@import "/templates/item_wx_article_list.wxss";
 page {
   width: 100%;
   height: 100%;
 }
 
-.category_list {
+.article_list{
   width: 100%;
   height: 100%;
 }
 
-.category_item_text {
-  color: #E7475E;
-  font-size: 14px;
-}
-
-.category_item {
-  width: 100%;
-  height: 100rpx;
-  display: flex;
-  align-items: center;
-  padding-left: 30rpx;
-  border: #eaeaea;
-  border-left-style: none;
-  border-right-style: none;
-  border-top-style: none;
-  border-bottom-style: solid;
-  border-width: 1px;
-}

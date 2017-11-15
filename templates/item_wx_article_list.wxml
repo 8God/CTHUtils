@@ -1,0 +1,14 @@
+<template name='item_wx_artical' >
+<navigator  class='item' url='/pages/wechat_article_detail/wechat_article_detail?url={{sourceUrl}}'>
+<image src='{{thumbnails}}' class='article_image' />
+
+<text class='text_title'>{{title}}</text>
+<text class='text_subtitle'>{{subTitle}}</text>
+<view class='article_extra_info'>
+<text class='text_pubtime'>发布于{{pubTime}}</text>
+<text class='text_hitcount'>点击数：{{hitCount}}</text>
+</view>
+
+
+</navigator>
+</template>
