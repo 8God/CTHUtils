@@ -1,0 +1,14 @@
+<view>
+<input type='number' placeholder='请输入您的手机号' class='input_phone_num' placeholder-class='input_phone_num_placeholder' maxlength='11' bindinput='inputPhoneNum' />
+
+<button style='margin-left:60rpx;margin-right:60rpx;margin-top:50rpx;background-color:#F8937E;color:#ffffff' bindtap='searchPhoneInfo' >查询手机号归属地</button>
+
+<view style='display:flex;flex-direction:column;margin:60rpx;align-content: space-between;'>
+<text>省份：{{province}}</text>
+<text>城市：{{city}}</text>
+<text>类型：{{operator}}</text>
+<text>邮编：{{zipCode}}</text>
+</view>
+
+
+</view>

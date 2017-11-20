@@ -11,9 +11,9 @@
   <block wx:for='{{menuItem}}'>
     <view class='horizontal_layout'>
       <block wx:for='{{item}}' wx:for-item='child'>
-        <navigator class='bg_menu_item' style='width:{{menuItemWidth}}px;' url='{{child.path}}' >
+        <navigator class='bg_menu_item' style='width:{{menuItemWidth}}px;background-color:{{child.bgColor}}' url='{{child.path}}' >
           <image src='{{child.iconPath}}' mode='scaleToFill' style='width:60rpx;height:60rpx;' />
-          <text>{{child.title}}</text>
+          <text style='color:{{child.textColor}};font-size:14px;margin-top:8px'>{{child.title}}</text>
         </navigator>
       </block>
     </view>

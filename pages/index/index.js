@@ -15,26 +15,42 @@ Page({
     menuItemWidth: 0,
     menuItem: [
       [{
-        iconPath: '/resources/icons/ic_wechat.png',
-        title: '微信精选1',
-        path: '/pages/wechat_category_list/wechat_category_list'
+        iconPath: '/resources/icons/ic_phone_infos.png',
+        title: '手机归属地',
+        path: '/pages/search_phone_info/search_phone_info',
+        bgColor: '#F70044',
+        textColor: '#ffffff'
       }, {
         iconPath: '/resources/icons/ic_wechat.png',
-        title: '微信精选2',
-        path: ''
+        title: '微信精选',
+        path: '/pages/wechat_category_list/wechat_category_list',
+        bgColor: '#11CD86',
+        textColor: '#ffffff'
       }, {
         iconPath: '/resources/icons/ic_wechat.png',
         title: '微信精选3',
-        path: ''
+        path: '',
+        bgColor: '#FEDA6A',
+        textColor: '#ffffff'
       }],
       [{
         iconPath: '/resources/icons/ic_wechat.png',
         title: '微信精选4',
-        path: ''
+        path: '',
+        bgColor: '#066FA5',
+        textColor: '#ffffff'
       }, {
         iconPath: '/resources/icons/ic_wechat.png',
         title: '微信精选5',
-        path: ''
+        path: '',
+        bgColor: '#EFA7A7',
+        textColor: '#ffffff'
+      }, {
+        iconPath: '/resources/icons/ic_wechat.png',
+        title: '微信精选5',
+        path: '',
+        bgColor: '#48B8D0',
+        textColor: '#ffffff'
       }]
     ]
   },
@@ -52,7 +68,7 @@ Page({
     wx: wx.getSystemInfo({
       success: function (res) {
         it.setData({
-          menuItemWidth: res.screenWidth / 3 - 1 ,
+          menuItemWidth: res.screenWidth / 3 - 1,
         });
       },
       fail: function (res) { },

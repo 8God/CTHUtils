@@ -6,7 +6,8 @@
     "pages/about/about",
     "pages/wechat_category_list/wechat_category_list",
     "pages/wechat_article_list/wechat_article_list",
-    "pages/wechat_article_detail/wechat_article_detail"
+    "pages/wechat_article_detail/wechat_article_detail",
+    "pages/search_phone_info/search_phone_info"
   ],
   "window":{
     "backgroundTextStyle":"light",

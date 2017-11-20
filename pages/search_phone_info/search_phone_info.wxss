@@ -1,0 +1,16 @@
+.input_phone_num {
+  margin-left: 60rpx;
+  margin-right: 60rpx;
+  margin-top: 80rpx;
+  padding-bottom: 22rpx;
+  border-bottom: 1px solid #999;
+}
+
+.input_phone_num_placeholder {
+  display: flex;
+  justify-content: center;
+}
+
+page {
+  width: 100%;
+}
