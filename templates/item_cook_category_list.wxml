@@ -1,0 +1,14 @@
+<template name="item_cook_category_list">
+  <view class='list-item' bindtap='onClickCategoryParent' data-index='{{123}}'>
+    <text class='text-title'>{{index}} : {{categoryInfo.name}}</text>
+  </view>
+
+  <block wx:if='{{isVisible}}'>
+    <block wx:for='{{childs}}' wx:for-item='category'>
+      <view class='list-item-child'>
+        <text class='text-subtitle'>{{category.categoryInfo.name}}</text>
+      </view>
+    </block>
+  </block>
+
+</template>

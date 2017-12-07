@@ -1,0 +1,39 @@
+.pullable-listview {
+  width: 100%;
+  height: 100%;
+
+}
+
+.text-title {
+  font-size: 38rpx;
+  font-style: bold;
+}
+
+.text-subtitle {
+  font-size:34rpx;
+}
+
+.list-item {
+  border-bottom:  1px solid #999999;
+  padding-left: 36rpx;
+  padding-top: 26rpx;
+  padding-bottom: 26rpx;
+}
+
+.list-item-child {
+  border-bottom:  1px solid #999999;
+  padding-left: 52rpx;
+  padding-top: 22rpx;
+  padding-bottom: 22rpx;
+}
+
+.list-item-child-hidden {
+  border-bottom:  1px solid #999999;
+  padding-left: 52rpx;
+  padding-top: 22rpx;
+  padding-bottom: 22rpx;
+  display: none;
+}
+
+
+

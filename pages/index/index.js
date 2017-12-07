@@ -5,7 +5,7 @@ const app = getApp()
 Page({
   data: {
     isShowHeader: true,
-    headerPicsPath: "/福利/10/1",
+    headerPicsPath: "/data/福利/10/1",
     imgUrls: [],
     autoplay: true,
     duration: 1000,
@@ -27,9 +27,9 @@ Page({
         bgColor: '#11CD86',
         textColor: '#ffffff'
       }, {
-        iconPath: '/resources/icons/ic_wechat.png',
-        title: '微信精选3',
-        path: '',
+        iconPath: '/resources/icons/ic_cook_guide.png',
+        title: '菜谱大全',
+        path: '/pages/cook_guide/cook_guide',
         bgColor: '#FEDA6A',
         textColor: '#ffffff'
       }],
