@@ -98,10 +98,19 @@ Page({
   },
 
   onClickCategoryParent:function(event) {
-    console.log("onClickCategoryParent: index = " + event.currentTarget.dataset.index);
-    // console.log("index = " + index);                   
-    // if (this.data.cook_category_list != null ) {
-    //   console.log("length = " + this.data.cook_category_list.length);
-    // }
+    var index = event.currentTarget.dataset.index;
+    var cook_category_list_temp = this.data.cook_category_list;
+    if (cook_category_list_temp != null && index < cook_category_list_temp.length) {
+      if(cook_category_list_temp[index].isVisible) {
+        cook_category_list_temp[index].isVisible = false;
+      } else {
+        cook_category_list_temp[index].isVisible = true;
+      }
+
+      console.log(cook_category_list_temp[index]);
+      this.setData({
+        cook_category_list: cook_category_list_temp,
+      });
+    }
   }
 })

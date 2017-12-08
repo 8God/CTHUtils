@@ -2,6 +2,6 @@
 
 <scroll-view scroll-y enable-back-to-top class='pullable-listview' >
   <block wx:for='{{cook_category_list}}' wx:for-item='cook_category'>
-    <template is='item_cook_category_list' data='{{...cook_category}}' />
+    <template is='item_cook_category_list' data='{{...cook_category,index}}' />
   </block>
 </scroll-view>
