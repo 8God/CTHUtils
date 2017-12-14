@@ -8,7 +8,9 @@
     "pages/wechat_article_list/wechat_article_list",
     "pages/wechat_article_detail/wechat_article_detail",
     "pages/search_phone_info/search_phone_info",
-    "pages/cook_guide/cook_guide"
+    "pages/cook_guide/cook_guide",
+    "pages/cook_menu/cook_menu",
+    "pages/cook_detail/cook_detail"
   ],
   "window":{
     "backgroundTextStyle":"light",

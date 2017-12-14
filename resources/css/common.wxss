@@ -1,7 +1,6 @@
 .pullable-listview {
   width: 100%;
   height: 100%;
-
 }
 
 .text-title {
@@ -10,30 +9,69 @@
 }
 
 .text-subtitle {
-  font-size:34rpx;
+  font-size: 34rpx;
+}
+
+.text-summary {
+  font-size: 34rpx;
+  color: #999;
+}
+
+.text-body {
+  font-size: 34rpx;
+  color: #333;
+}
+
+.container-body {
+  padding: 32rpx;
 }
 
 .list-item {
-  border-bottom:  1px solid #999999;
+  border-bottom: 1px solid #999;
   padding-left: 36rpx;
   padding-top: 26rpx;
   padding-bottom: 26rpx;
+  padding-right: 36rpx;
 }
 
 .list-item-child {
-  border-bottom:  1px solid #999999;
+  border-bottom: 1px solid #999;
   padding-left: 52rpx;
   padding-top: 22rpx;
   padding-bottom: 22rpx;
 }
 
 .list-item-child-hidden {
-  border-bottom:  1px solid #999999;
+  border-bottom: 1px solid #999;
   padding-left: 52rpx;
   padding-top: 22rpx;
   padding-bottom: 22rpx;
   display: none;
 }
 
+.text-tworow-ellip {
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
+.card-shadow {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  border-radius: 12rpx;
+  box-shadow: 3rpx 3rpx 6rpx 6rpx #eee;
+}
 
+.divider {
+  width: 100%;
+  height: 2rpx;
+  background-color: #999;
+  margin-top: 28rpx;
+  margin-bottom: 28rpx;
+}

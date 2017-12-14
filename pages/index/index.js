@@ -70,6 +70,8 @@ Page({
         it.setData({
           menuItemWidth: res.screenWidth / 3 - 1,
         });
+
+        console.log("it.data.menuItemWidth = " + it.data.menuItemWidth);
       },
       fail: function (res) { },
       complete: function (res) { },

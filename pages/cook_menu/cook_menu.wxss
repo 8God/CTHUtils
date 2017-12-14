@@ -1,0 +1,2 @@
+@import "/resources/css/common.wxss";
+@import "/templates/item_cook_menu.wxss"; 

@@ -1,0 +1,7 @@
+<import src='/templates/item_cook_menu.wxml' />
+
+<scroll-view scroll-y class='pullable-listview' enable-back-to-top bindscrolltolower='onLoadMore'>
+  <block wx:for='{{cookMenuList}}' wx:for-item='cookMenu'>
+    <template is="item_cook_menu" data="{{cookMenu}}"  />
+  </block>
+</scroll-view>

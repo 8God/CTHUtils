@@ -1,0 +1,18 @@
+<template name='item_cook_menu'>
+  <view class='card-shadow' bindtap='onClickCook' data-cook='{{cookMenu}}' data-id='{{cookMenu.menuId}}'>
+    <image src='{{cookMenu.recipe.img}}' class='article_image' mode='scaleToFill'></image>
+
+    <view style='margin-left:32rpx;margin-top:32rpx'>
+      <text class='text-title'>{{cookMenu.name}}</text>
+    </view>
+    <view style='margin-top:20rpx;margin-left:32rpx'>
+      <icon type="info" size="15" />
+      <text class='text-subtitle'>   {{cookMenu.ctgTitles}}</text>
+    </view>
+    <view style='margin-top:15rpx;margin-left:32rpx;margin-right:32rpx;margin-bottom:32rpx;'>
+      <text class='text-summary text-tworow-ellip'>{{cookMenu.recipe.sumary}}</text>
+    </view>
+
+  </view>
+
+</template>

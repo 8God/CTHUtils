@@ -1,5 +1,6 @@
+// pages/cook_menu/cook_menu.js
 const app = getApp();
-const articlePath = "/wx/article/search";
+const cookMenuPath = "/v1/cook/menu/search";
 
 var isCanLoadMore = false;
 var isLoadingMore = false;
@@ -13,7 +14,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    articleList: [],
+    cookMenuList: {},
   },
 
   /**
@@ -22,39 +23,48 @@ Page({
   onLoad: function (options) {
     var that = this;
     cid = options.cid;
+
+    console.log("cid = " + options.cid);
+
     wx.showLoading({
-      title: '请求数据中',
+      title: '获取数据中...',
+      mask: true,
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
     })
-    this.getArticleList();
+
+    this.getCookMenuList();
+
   },
 
-  getArticleList: function () {
+  getCookMenuList: function () {
     var that = this;
     wx: wx.request({
-      url: app.globalData.mobAPI + articlePath,
+      url: app.globalData.mobAPI + cookMenuPath,
       data: {
         key: app.globalData.mobKey,
         cid: cid,
-        page: page
+        page: page,
       },
-      method: "GET",
-      dataType: "json",
+      method: 'GET',
+      dataType: 'json',
       success: function (res) {
         if (res != null && res.statusCode == 200) {
           if (res.data != null) {
             var result = res.data.result
             if (result != null && result.list != null && result.list.length > 0) {
-              if (that.data.articleList != null && that.data.articleList.length > 0) { //已有数据的情况下（加载更多）
-                var mArticalList = that.data.articleList;
+              if (that.data.cookMenuList != null && that.data.cookMenuList.length > 0) { //已有数据的情况下（加载更多）
+                var mCookMenuList = that.data.cookMenuList;
                 for (var i = 0; i < result.list.length; i++) {
-                  mArticalList.push(result.list[i]);
+                  mCookMenuList.push(result.list[i]);
                 }
                 that.setData({
-                  articleList: mArticalList,
+                  cookMenuList: mCookMenuList,
                 });
               } else {
                 that.setData({
-                  articleList: result.list,
+                  cookMenuList: result.list,
                 });
                 total = result.total;
               }
@@ -74,8 +84,8 @@ Page({
 
   onFinishGetData: function () {
     var that = this;
-    if (that.data.articleList != null && that.data.articleList.length > 0) {
-      if (total > 0 && that.data.articleList.length < total) {
+    if (that.data.cookMenuList != null && that.data.cookMenuList.length > 0) {
+      if (total > 0 && that.data.cookMenuList.length < total) {
         isCanLoadMore = true;
       } else if (total > 0) {
         isCanLoadMore = false;
@@ -90,12 +100,22 @@ Page({
   onLoadMore: function () {
     if (!isLoadingMore) {
       page++;
-
-      console.log("page = " + page);
-
+      console.log("onLoadMore:page = " + page);
       isLoadingMore = true;
-      this.getArticleList();
+      this.getCookMenuList();
     }
+  },
+
+  onClickCook: function(event) {
+    var menuId = event.currentTarget.dataset.id;
+    var cookObj = event.currentTarget.dataset.cook;
+
+    wx.navigateTo({
+      url: '/pages/cook_detail/cook_detail?cookMenu=' + JSON.stringify(cookObj),
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
   },
 
   /**

@@ -3,13 +3,15 @@
     <text wx:if='{{isVisible}}'>-   </text>
     <text wx:else>+   </text>
     <text class='text-title'>{{categoryInfo.name}}</text>
-    
+
   </view>
 
   <block wx:if='{{isVisible}}'>
     <block wx:for='{{childs}}' wx:for-item='category'>
       <view class='list-item-child'>
-        <text class='text-subtitle'>{{category.categoryInfo.name}}</text>
+        <navigator url='/pages/cook_menu/cook_menu?cid={{category.categoryInfo.ctgId}}'>
+          <text class='text-subtitle'>{{category.categoryInfo.name}}</text>
+        </navigator>
       </view>
     </block>
   </block>
