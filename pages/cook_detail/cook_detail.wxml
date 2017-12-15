@@ -3,7 +3,7 @@
 
   <view class='container-body'>
     <view>
-      <text class='text-title'>{{cookMenu.recipe.title}}</text>
+      <text class='text-title' >{{cookMenu.recipe.title}}</text>
     </view>
 
     <view style='margin-top:28rpx;'>

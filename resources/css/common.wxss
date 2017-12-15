@@ -6,6 +6,7 @@
 .text-title {
   font-size: 38rpx;
   font-style: bold;
+  font-weight: bold;
 }
 
 .text-subtitle {
