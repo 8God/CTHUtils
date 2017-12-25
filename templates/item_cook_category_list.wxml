@@ -9,7 +9,7 @@
   <block wx:if='{{isVisible}}'>
     <block wx:for='{{childs}}' wx:for-item='category'>
       <view class='list-item-child'>
-        <navigator url='/pages/cook_menu/cook_menu?cid={{category.categoryInfo.ctgId}}'>
+        <navigator url='/pages/cook_menu/cook_menu?cid={{category.categoryInfo.ctgId}}&cname={{category.categoryInfo.name}}'>
           <text class='text-subtitle'>{{category.categoryInfo.name}}</text>
         </navigator>
       </view>

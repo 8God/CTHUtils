@@ -1,1 +1,23 @@
+<scroll-view style='width:100%;height:100%;'>
+  <view class='center-container'>
+    <image class='user-head' src='/resources/images/user_head_photo.jpg' mode='aspectFill'></image>
 
+    <view class='text-title'>
+      {{projectName}}
+    </view>
+
+    <view class='text-summary'>
+      版本：{{versionName}}
+    </view>
+
+    <view class='text-body'>
+      开发者：TwoBirds
+    </view>
+
+    <view class='divider'></view>
+
+    <view class='text-body'>
+      {{projectName}}是一款提供多种使用工具的微信小程序，由TwoBirds独立开发，目前是1.0.0版本，包括的功能有：手机号归属地查询、微信精选（目前是个人帐号，暂不支持web-view控件，所以无法浏览文章url）、菜谱大全。
+    </view>
+  </view>
+</scroll-view>

@@ -26,6 +26,15 @@ Page({
       title: '请求数据中',
     })
     this.getArticleList();
+
+    if(options.name != null) {
+      wx.setNavigationBarTitle({
+        title: options.name + " - 微信精选列表",
+        success: function(res) {},
+        fail: function(res) {},
+        complete: function(res) {},
+      })
+    }
   },
 
   getArticleList: function () {

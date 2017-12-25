@@ -7,6 +7,7 @@ var isLoadingMore = false;
 var page = 1;
 var total = 0;
 var cid = '';
+var cname = '';
 
 Page({
 
@@ -23,8 +24,14 @@ Page({
   onLoad: function (options) {
     var that = this;
     cid = options.cid;
+    cname = options.cname;
 
-    console.log("cid = " + options.cid);
+    wx.setNavigationBarTitle({
+      title: cname,
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
 
     wx.showLoading({
       title: '获取数据中...',

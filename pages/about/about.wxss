@@ -1,1 +1,34 @@
 /* pages/about/about.wxss */
+@import '/resources/css/common.wxss';
+
+.text-title {
+  margin-top: 30rpx;
+}
+
+.text-summary{
+  margin-top: 24rpx;
+}
+
+.text-body {
+  margin: 38rpx;
+}
+
+.center-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-head {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 150rpx;
+}
+
+.divider {
+  margin-left: 26rpx;
+  margin-right: 26rpx;
+}

@@ -1,5 +1,5 @@
 <template name='item_wx_artical' >
-<navigator  class='item' url='/pages/wechat_article_detail/wechat_article_detail?url={{sourceUrl}}'>
+<navigator  class='item' url='/pages/wechat_article_detail/wechat_article_detail?url={{sourceUrl}}&title={{title}}'>
 <image src='{{thumbnails}}' class='article_image' />
 
 <text class='text_title'>{{title}}</text>

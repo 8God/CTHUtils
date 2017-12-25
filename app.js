@@ -8,5 +8,6 @@ App({
     gankBaseUrl:"https://gank.io/api",
     mobAPI:"https://apicloud.mob.com",
     mobKey:"93c718b5f428",
+    projectName:"实用工具助手"
   }
 })

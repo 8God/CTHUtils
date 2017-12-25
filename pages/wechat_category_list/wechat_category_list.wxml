@@ -7,7 +7,7 @@
 
 <template name='item_category_list'>
  
-    <navigator class='category_item' url='/pages/wechat_article_list/wechat_article_list?cid={{cid}}'>
+    <navigator class='category_item' url='/pages/wechat_article_list/wechat_article_list?cid={{cid}}&name={{name}}'>
       <text class='category_item_text'>{{name}}</text>
     </navigator>
  
