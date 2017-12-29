@@ -35,8 +35,8 @@ Page({
       }],
       [{
         iconPath: '/resources/icons/ic_wechat.png',
-        title: '微信精选4',
-        path: '',
+        title: '热映电影',
+        path: '/pages/movie_in_theaters/movie_in_theaters',
         bgColor: '#066FA5',
         textColor: '#ffffff'
       }, {

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "热映电影",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+  
+}

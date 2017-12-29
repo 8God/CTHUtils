@@ -1,0 +1,9 @@
+<template name='item_movie_list'>
+
+  <view class='movie-list-item'>
+    <image class='movie-list-item-poster' mode='aspectFit' src='{{images.medium}}'></image>
+    <view class='text-title'>{{title}}</view>
+  </view>
+
+
+</template>

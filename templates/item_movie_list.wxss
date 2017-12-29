@@ -1,0 +1,24 @@
+@import '/resources/css/common.wxss';
+
+.movie-list-item {
+  padding: 32rpx;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.movie-list-item-poster {
+  width: 272rpx;
+  height: 380rpx;
+}
+
+.text-title {
+  flex: 1;
+  margin-left: 36rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}

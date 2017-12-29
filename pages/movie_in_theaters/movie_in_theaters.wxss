@@ -1,0 +1,3 @@
+/* pages/movie_in_theaters/movie_in_theaters.wxss */
+@import '/templates/item_movie_list.wxss';
+

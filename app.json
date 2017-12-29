@@ -10,7 +10,8 @@
     "pages/search_phone_info/search_phone_info",
     "pages/cook_guide/cook_guide",
     "pages/cook_menu/cook_menu",
-    "pages/cook_detail/cook_detail"
+    "pages/cook_detail/cook_detail",
+    "pages/movie_in_theaters/movie_in_theaters"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,7 @@
+<import src='/templates/item_movie_list.wxml' />
+
+<view style='background-color:#eee' >
+  <block wx:for='{{movieList}}' wx:for-item='subject'>
+    <template is='item_movie_list' data='{{...subject}}' />
+  </block>
+</view>
